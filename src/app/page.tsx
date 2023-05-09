@@ -5,6 +5,7 @@ import { FaCode, FaRegCopyright, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
+import { GrMapLocation, GrMailOption } from 'react-icons/gr'
 
 export default function Home() {
   const [menu, setMenu] = useState<boolean>(false);
@@ -23,18 +24,18 @@ export default function Home() {
 
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-          <section className='home-section'>
+          <section className='home-section' id='home'>
             <div className='container'>
 
-              <div className='intro'>
+              <div className='hero'>
                 <div className='text-wrap'>
                   <h1>Front-end React Developer</h1>
                   <p>Hello I am Higor. A passionate frontend developer from Brazil!</p>
@@ -80,7 +81,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='projects-section'>
+          <section className='projects-section' id='projects'>
             <div className='container'>
               <h2>Projects</h2>
 
@@ -91,7 +92,7 @@ export default function Home() {
 
                 <div className='info-wrap'>
                   <div className='text'>
-                    <h2>Crypto-Tiger</h2>
+                    <h3>Crypto-Tiger</h3>
                     <p>Crypto-Tiger is a web application that allows the user to see real-time info about the crypto market.</p>
                   </div>
 
@@ -114,7 +115,7 @@ export default function Home() {
 
                 <div className='info-wrap'>
                   <div className='text'>
-                    <h2>Poke-commerce</h2>
+                    <h3>Poke-commerce</h3>
                     <p>A commerce website with focus on SEO with pre-rendered pages that use dynamic routes with everything a real commerce site has.</p>
                   </div>
 
@@ -139,7 +140,7 @@ export default function Home() {
 
                 <div className='info-wrap'>
                   <div className='text'>
-                    <h2>Task-App</h2>
+                    <h3>Task-App</h3>
                     <p>A to-do app with minimalist design with option to toggle between themes.</p>
                   </div>
 
@@ -150,24 +151,51 @@ export default function Home() {
 
                   <div className='links'>
                     <a href='https://github.com/HigorR456/Task-App' target='_blank'>Code <FaGithub /></a>
-                    <a href='https://crypto-tiger.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
+                    <a href='https://task-app456.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
                   </div>
                 </div>
               </div>
 
             </div>
           </section>
-          <section className='contact-section'>b</section>
+
+          <section className='contact-section' id='contact'>
+            <div className='container'>
+              
+              <h2>Contact</h2>
+
+              <div className='content'>
+                <div className='location-wrap'>
+                  <GrMapLocation className='icon' />
+                  <div className='text'>
+                    <h4>Location</h4>
+                    <p>São Paulo, Brazil</p>
+                  </div>
+                </div>
+
+                <div className='email-wrap'>
+                  <GrMailOption className='icon' />
+                  <div className='text'>
+                    <h4>Email</h4>
+                    <a href='mailto:higor456dev@gmail.com'>higor456dev@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
       </main>
 
       <footer>
         <div className='wrap'>
-          <div>
+          <div className='copy'>
             <FaRegCopyright/> 2023. All rights reserved.
           </div>
-          <div>
-            <FaLinkedin/>
-            <FaGithub/>
+          <div className='links'>
+            
+            <a href='https://www.linkedin.com/in/higor456dev/' target='_blank'><FaLinkedin className='icon'/></a>
+            <a href='https://github.com/HigorR456' target='_blank'><FaGithub className='icon'/></a>
           </div>
         </div>
       </footer>

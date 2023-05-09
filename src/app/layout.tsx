@@ -1,4 +1,5 @@
-import '../styles/global.scss'
+import '../styles/globals.scss'
+import '../styles/page.scss'
 
 export const metadata = {
   title: "Higor's Portfolio",
