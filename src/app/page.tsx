@@ -5,7 +5,7 @@ import { FaCode, FaRegCopyright, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
-import { GrMapLocation, GrMailOption } from 'react-icons/gr'
+import { TfiMapAlt, TfiEmail } from 'react-icons/tfi'
 
 export default function Home() {
   const [menu, setMenu] = useState<boolean>(false);
@@ -24,9 +24,9 @@ export default function Home() {
 
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={() => setMenu(false)}>Home</a></li>
+            <li><a href="#projects" onClick={() => setMenu(false)}>Projects</a></li>
+            <li><a href="#contact" onClick={() => setMenu(false)}>Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -40,8 +40,8 @@ export default function Home() {
                   <h1>Front-end React Developer</h1>
                   <p>Hello I am Higor. A passionate frontend developer from Brazil!</p>
                   <div className='icon-wrap'>
-                    <FaLinkedin className='icon'/>
-                    <FaGithub className='icon'/>
+                    <a href='https://www.linkedin.com/in/higor456dev/' target='_blank'><FaLinkedin className='icon'/></a>
+                    <a href='https://github.com/HigorR456' target='_blank'><FaGithub className='icon'/></a>
                   </div>
                 </div>
                 <div className='photo-wrap'>
@@ -166,7 +166,7 @@ export default function Home() {
 
               <div className='content'>
                 <div className='location-wrap'>
-                  <GrMapLocation className='icon' />
+                  <TfiMapAlt className='icon' />
                   <div className='text'>
                     <h4>Location</h4>
                     <p>São Paulo, Brazil</p>
@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
 
                 <div className='email-wrap'>
-                  <GrMailOption className='icon' />
+                  <TfiEmail className='icon' />
                   <div className='text'>
                     <h4>Email</h4>
                     <a href='mailto:higor456dev@gmail.com'>higor456dev@gmail.com</a>

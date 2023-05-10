@@ -94,7 +94,7 @@ header {
 
         position: absolute;
         border-top: 1px solid rgba(0, 0, 0, 0.1);;
-        top: 75px;
+        top: 70px;
 
         animation: menu-transition .3s forwards;
 
@@ -283,7 +283,7 @@ main {
                     .pokemon {
                         transition: 6s ease-in-out;
                         &:hover {
-                            transform: translateY(-56%);
+                            transform: translateY(-58%);
                         }
                     }
                     .crypto {
@@ -386,6 +386,7 @@ main {
                 .icon {
                     font-size: 50px;
                     padding-right: 20px;
+                    color: var(--color-tertiary);
                 }
                 .text {
                     h4 {
@@ -413,6 +414,7 @@ main {
                 .icon {
                     font-size: 50px;
                     padding-right: 20px;
+                    color: var(--color-tertiary);
                 }
                 .text {
                     h4 {
@@ -440,7 +442,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: var(--bg-secondary);
+    background: var(--color-tertiary);
     height: 150px;
 
     .wrap {
@@ -454,7 +456,7 @@ footer {
  
         .copy {
             font-size: 20px;
-            color: var(--color-tertiary);
+            color: var(--bg-tertiary);
         }
 
         .links {
@@ -462,9 +464,9 @@ footer {
             .icon {
                 font-size: 30px;
                 margin-left: 10px;
-                color: var(--color-tertiary);
+                color: var(--bg-tertiary);
                 &:hover {
-                    color: var(--color-primary);
+                    color: var(--bg-primary);
                 }
             }
         }
