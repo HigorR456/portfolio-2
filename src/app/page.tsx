@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react'
+import Head from 'next/head'
 
 import { FaCode, FaRegCopyright, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { BiMenu } from 'react-icons/bi'
@@ -12,6 +13,9 @@ export default function Home() {
 
   return (
     <div className='theme-light'>
+      <Head>
+        <link rel ='code' href='/code.svg' />
+      </Head>
       <header className={menu ? 'show' : ''}>
         <div className='logo'>
           Higor<FaCode className='icon' />Dev
@@ -61,6 +65,10 @@ export default function Home() {
                   </div>
 
                   <div className='wrap'>
+                    <img src='/javascript.svg' alt='javascript'></img>
+                  </div>
+
+                  <div className='wrap'>
                     <img src='/typescript.svg' alt='typescript'></img>
                   </div>
 
@@ -75,6 +83,11 @@ export default function Home() {
                   <div className='wrap'>
                     <img src='/sass.svg' alt='sass'></img>
                   </div>
+
+                  <div className='wrap'>
+                    <img src='/tailwindcss-icon.svg' alt='tailwind'></img>
+                  </div>
+
                 </div>
               </div>
 
@@ -152,6 +165,77 @@ export default function Home() {
                   <div className='links'>
                     <a href='https://github.com/HigorR456/Task-App' target='_blank'>Code <FaGithub /></a>
                     <a href='https://task-app456.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='project-wrap'>
+                <div className='image-wrap'>
+                  <img src='/screencapture-click-test.png' className='click'></img>
+                </div>
+
+                <div className='info-wrap'>
+                  <div className='text'>
+                    <h3>Click Test</h3>
+                    <p>Application that renders circles where the user clicks on the screen with two functionalities. Undo remove the circle and Redo which add the circle previously removed.</p>
+                  </div>
+
+                  <div className='skills-wrap'>
+                    <img src='/react.svg' alt='react'></img>
+                    <img src='/sass.svg' alt='sass'></img>
+                  </div>
+
+                  <div className='links'>
+                    <a href='https://github.com/HigorR456/click-test' target='_blank'>Code <FaGithub /></a>
+                    <a href='https://click-test456.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='project-wrap'>
+                <div className='image-wrap'>
+                  <img src='/screencapture-landing.png' className='landing'></img>
+                </div>
+
+                <div className='info-wrap'>
+                  <div className='text'>
+                    <h3>Landing Page</h3>
+                    <p>Car sales page with minimalist design. Effects and animations on the homepage, responsiveness.
+                    </p>
+                  </div>
+
+                  <div className='skills-wrap'>
+                    <img src='/react.svg' alt='react'></img>
+                    <img src='/tailwindcss-icon.svg' alt='tailwind'></img>
+                  </div>
+
+                  <div className='links'>
+                    <a href='https://github.com/HigorR456/landing-page' target='_blank'>Code <FaGithub /></a>
+                    <a href='https://landing-page456.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='project-wrap'>
+                <div className='image-wrap'>
+                  <img src='/screencapture-dictionary.png' className='dictionary'></img>
+                </div>
+
+                <div className='info-wrap'>
+                  <div className='text'>
+                    <h3>Dictionary App</h3>
+                    <p>Dictionary App built using only JavaScript, HTML and CSS. It works through an API that provides information about the word searched.</p>
+                  </div>
+
+                  <div className='skills-wrap'>
+                    <img src='/html5.svg' alt='html'></img>
+                    <img src='/css3.svg' alt='css'></img>
+                    <img src='/javascript.svg' alt='javascript'></img>
+                  </div>
+
+                  <div className='links'>
+                    <a href='https://github.com/HigorR456/Dictionary-App' target='_blank'>Code <FaGithub /></a>
+                    <a href='https://dictionary-app456.netlify.app/' target='_blank'>Demo <FiExternalLink /></a>
                   </div>
                 </div>
               </div>
