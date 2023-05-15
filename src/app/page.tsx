@@ -10,12 +10,14 @@ import { TfiMapAlt, TfiEmail } from 'react-icons/tfi'
 
 export default function Home() {
   const [menu, setMenu] = useState<boolean>(false);
+  const [theme, setTheme] = useState<boolean>(false);
 
   return (
-    <div className='theme-light'>
+    <div className={theme ? 'dark-theme' : 'light-theme'}>
       <Head>
         <link rel ='code' href='/code.svg' />
       </Head>
+
       <header className={menu ? 'show' : ''}>
         <div className='logo'>
           Higor<FaCode className='icon' />Dev
@@ -32,6 +34,11 @@ export default function Home() {
             <li><a href="#projects" onClick={() => setMenu(false)}>Projects</a></li>
             <li><a href="#contact" onClick={() => setMenu(false)}>Contact</a></li>
           </ul>
+
+          <label className="switch">
+            <input type="checkbox" onChange={() => theme ? setTheme(false) : setTheme(true)}/>
+            <span className="slider"></span>
+          </label>
         </nav>
       </header>
 

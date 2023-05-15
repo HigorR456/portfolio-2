@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap');
 
 :root {
+    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     body {
         margin: 0;
@@ -9,13 +10,28 @@
     }
 }
 
-.theme-light {
+.light-theme {
     --color-primary: black;
     --color-secondary: rgb(50,50,50);
     --color-tertiary: rgb(100,100,100);
     --bg-primary: white;
     --bg-secondary: #ebebeb;
     --bg-tertiary: #f5f5f5;
+    --box-color: rgba(0, 0, 0, 0.1);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --wrap-color: white;
+}
+
+.dark-theme {
+    --color-primary: white;
+    --color-secondary: #ebebeb;
+    --color-tertiary: rgb(150,150,150);
+    --bg-primary: rgb(30, 30, 30);
+    --bg-secondary: rgb(20,20,20);
+    --bg-tertiary: rgb(10, 10, 10);
+    --box-color: rgba(0, 0, 0, 0.5);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --wrap-color: rgb(75, 75, 75);
 }
 
 main {
