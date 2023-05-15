@@ -1,3 +1,29 @@
+<div align='center'><img src='https://github.com/HigorR456/portfolio-2/assets/109878939/5e609b7e-d148-49ba-9a52-7c548ab4fdf1'/></div>
+
+<h2>About the project</h2>
+
+This is my portfolio, a single page application that presents who I am, my most relevant projects and provide contact information. It has a minimalistic design and features a toggle theme option.
+
+👉Live demo: https://higordev.netlify.app/
+
+<h3>Build with:</h3>
+
+» React JS <br>
+» Next.js <br>
+» SASS
+
+<h2>📸Screenshot of the Project</h2>
+<br>
+
+<img src='https://github.com/HigorR456/portfolio-2/assets/109878939/463c4572-600d-4a41-a3a2-6335467ed243'/>
+</div>
+
+<div align='center'>
+<img src='https://github.com/HigorR456/portfolio-2/assets/109878939/0c298966-3278-4835-846a-f9882e03d27b'/>
+</div>
+
+______________________________________________________________
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
