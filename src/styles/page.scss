@@ -294,6 +294,7 @@ main {
                         box-shadow: 0 1px 10px 0 var(--box-color);
                         img {
                             background: var(--wrap-color);
+                            transition: .3s;
                             width: 40px;
                         }
                     }
